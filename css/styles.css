@@ -1,0 +1,175 @@
+/* This is used to center all headers and paragraph text */
+h1, h2, h3, p {
+text-align: center;
+}
+
+/* This is used to change the text color of the website title, give it a border and background color, as well as change its color by using the animation shiftColor */
+h1 {
+background-color: #000000;
+color: #ffffff;
+border: 10px solid #000000;
+animation-name: shiftColor;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+/* This is used to change the text color of headers and give them a border as well as a text shadow */
+h2 {
+background-color: #1117d1;
+color: #ffffff;
+border: 5px solid #1117d1;
+border-radius: 25px;
+text-shadow: 2.5px 2.5px 0 #000;
+}
+
+/* This is used to change the text color of smaller headers and give them a text shadow */
+h3 {
+color: #000000;
+text-shadow: 1.5px 1.5px 0 #fff;
+}
+
+/* This is used to specify the font of the paragraph text and give it a white text shadow */
+p {
+font: 100% Verdana;
+text-shadow: 0.4px 0.4px 0 #000, -0.3px -0.3px 0 #000;
+}
+
+/* This is used to stylize the tables and give each cell a gradient background color */
+table, th, td {
+background-image: linear-gradient(#fffff0, #ffffff, #7f82eb);
+border: 2px solid;
+}
+
+/* This is used to give the webpage a background gradient color and specify the font */
+body {
+background-image: linear-gradient(#7f82eb, #ffffff, #7f82eb);
+font-family: Georgia, serif;
+margin: 25px;
+line-height: 30px;
+}
+
+/* This is used to specify images on the modules page for the transition effect to only occur with them */
+.moduleImg {
+transition: height 1.2s, width 1.2s;
+}
+
+/* This is used to make images in the modules page increase in size when hovered over */
+.moduleImg:hover {
+height: 163px;
+width: 350px;
+}
+
+/* This is used to center an element */
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* This is used to center an element without having it as a block */
+.centerNoBlock {
+margin-left: auto;
+margin-right: auto;
+}
+
+/* This is used to place an element on the left side of the page */
+.left {
+float: left;
+text-align: left;
+}
+
+/* This is used to place an element on the right side of the page */
+.right {
+float: right;
+text-align: right;
+}
+
+/* This is used to make images rounded on the edges */
+.rounded {
+border-radius: 35px;
+}
+
+/* This is used to format the navigation list as buttons on the top of the page */
+.navigationbutton {
+width: 275px;
+height: 30px;
+float: left;
+background-color: #4d1eba;
+color: #ffffff;
+text-shadow: 1.5px 1.5px 0 #000;
+list-style-type: none;
+text-align: center;
+border: 5px solid #210c54;
+transition: background-color 0.6s;
+}
+
+/* This is used to change the background color of the navigation button that is being hovered on */
+.navigationbutton:hover {
+background-color: #210c54;
+}
+
+/* This is used to format the link text in the navigation buttons */
+li a {
+display: block;
+}
+
+/* This is used to make the link text color white in the navigation buttons even after the link was visited */
+li a:visited{
+color: #ffffff;
+}
+
+/* This is used to make the link text color white in the navigation buttons */
+li a:link{
+color: #ffffff;
+}
+
+/* This is a version of the navigation button with a different background color to signify the current page */
+.navigationbuttoncurrent {
+width: 275px;
+height: 30px;
+float: left;
+background-color: #9755c9;
+color: #ffffff;
+text-shadow: 1.5px 1.5px 0 #000;
+list-style-type: none;
+text-align: center;
+border: 5px solid #210c54;
+transition: background-color 0.6s;
+}
+
+/* This is used to change the background color of the navigation button that is being hovered on */
+.navigationbuttoncurrent:hover {
+background-color: #210c54;
+}
+
+/* This is used to place the navigation in the center of the page */
+ul {
+top: 10%;
+left: 10%;
+margin-right: 10%;
+transform: translate(10%, 10%)
+}
+
+/* This is used to have a special break line that changes depending on page width */
+.br {
+display: block;
+margin-bottom: 7em;
+}
+
+/* This is used as an animation to constantly change the background color of the website title header */
+@keyframes shiftColor {
+0% {background-color:#000000;}
+50% {background-color:#163566;}
+100% {background-color:#000000;}
+}
+
+/* This is used to change the table format and distance between navigation buttons and content depending on the width of the browser window */
+@media only screen and (max-width: 768px) {
+table, th, td {
+border: 0.3px solid;
+font-size: 95%;
+}
+.br {
+margin-bottom: 12em;
+}
+}

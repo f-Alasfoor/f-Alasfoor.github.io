@@ -163,7 +163,7 @@ margin-bottom: 7em;
 100% {background-color:#000000;}
 }
 
-/* This is used to change the table format and distance between navigation buttons and content depending on the width of the browser window */
+/* This is used to change the table format and distance between navigation buttons and content depending on the width of the browser window, as well as make the image on the main page smaller */
 @media only screen and (max-width: 768px) {
 table, th, td {
 border: 0.3px solid;
